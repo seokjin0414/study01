@@ -32,7 +32,7 @@ public class Test_01 {
         for (int i = 0; i < val.size(); i++)
             total *= val.get(i);
 
-        System.out.print(a + "와 " + b + "사이의 " + c + "의 배수의 합: " + total);
+        System.out.print(a + "와 " + b + "사이의 " + c + "의 배수의 곱: " + total);
 
 
     }

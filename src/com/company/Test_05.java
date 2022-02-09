@@ -29,6 +29,7 @@ public class Test_05 {
             b = a.replaceAll("(\\d{4})(\\d{4})", "$1-$2");
         } else
             b = a;
+
         return b;
     }
 

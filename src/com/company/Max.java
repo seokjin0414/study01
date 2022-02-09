@@ -9,8 +9,6 @@ public class Max {
         Scanner kb = new Scanner(System.in);
 
 
-        int max;
-
         System.out.print("배열의 길이를 입력하세요 : ");
         int s = kb.nextInt();
         int[] n = new int[s];
@@ -22,9 +20,8 @@ public class Max {
 
         }
 
-        max = getMax(n);
 
-        System.out.printf("가장 큰 수는 %d입니다.", max);
+        System.out.printf("가장 큰 수는 %d입니다.", getMax(n));
     }
 
     static int getMax(int[] n) {
