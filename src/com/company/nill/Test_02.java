@@ -1,4 +1,4 @@
-package com.company;
+package com.company.nill;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

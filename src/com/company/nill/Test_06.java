@@ -1,5 +1,9 @@
-package com.company;
+package com.company.nill;
 
+import com.sun.beans.decoder.ValueObject;
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
+import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -15,14 +19,18 @@ public class Test_06 {
         System.out.println("더할시간_초 를 입력하세요: ");
         int s = kb.nextInt();
 
+        SimpleDateFormat newDtFormat = new SimpleDateFormat("HH:mm:ss");
 
         LocalTime t = LocalTime.parse(b);
         System.out.println(t.plusSeconds(s));
 
+        System.out.println("~~~~~~~~~");
         LocalTime t1 = t.plusSeconds(s);
 
-        String c = String.valueOf(t1.getHour()) + String.valueOf(t1.getMinute()) + String.valueOf(t1.getSecond());
+        System.out.println(t1);
 
-        System.out.println(c);
+        // String c = (String) ValueObject(t1);
+
+        System.out.println("");
     }
 }
