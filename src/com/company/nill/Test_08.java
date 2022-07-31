@@ -6,6 +6,7 @@ public class Test_08 {
         str = str.trim();
 
         String[] newStr = str.split("\\s+");
+
         for (int i = 0; i < newStr.length; i++) {
             System.out.println(newStr[i]);
         }
