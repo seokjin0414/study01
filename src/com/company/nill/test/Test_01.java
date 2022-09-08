@@ -1,4 +1,4 @@
-package com.company.nill;
+package com.company.nill.test;
 
 import java.util.ArrayList;
 import java.util.Scanner;

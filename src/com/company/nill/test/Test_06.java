@@ -1,4 +1,4 @@
-package com.company.nill;
+package com.company.nill.test;
 
 import com.sun.beans.decoder.ValueObject;
 import jdk.internal.org.objectweb.asm.tree.analysis.Value;
