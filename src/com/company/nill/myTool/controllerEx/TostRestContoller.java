@@ -24,7 +24,7 @@ import java.util.Map;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "/api/v1/tost", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class TostRestContoller extends BaseRestController {
 
