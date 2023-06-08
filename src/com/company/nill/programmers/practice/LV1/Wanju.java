@@ -1,4 +1,4 @@
-package com.company.nill.programmers.practice;
+package com.company.nill.programmers.practice.LV1;
 
 import java.util.Arrays;
 import java.util.HashMap;

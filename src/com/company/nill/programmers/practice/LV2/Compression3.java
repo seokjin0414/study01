@@ -1,4 +1,4 @@
-package com.company.nill.programmers.practice;
+package com.company.nill.programmers.practice.LV2;
 import java.util.*;
 
 public class Compression3 {
