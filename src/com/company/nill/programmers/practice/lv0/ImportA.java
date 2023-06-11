@@ -1,4 +1,4 @@
-package com.company.nill.programmers.practice.LV0;
+package com.company.nill.programmers.practice.lv0;
 
 public class ImportA {
     class Solution {

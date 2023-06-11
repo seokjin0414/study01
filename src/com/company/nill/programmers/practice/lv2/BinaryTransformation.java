@@ -1,4 +1,4 @@
-package com.company.nill.programmers.practice.LV2;
+package com.company.nill.programmers.practice.lv2;
 
 public class BinaryTransformation {
     class Solution {
