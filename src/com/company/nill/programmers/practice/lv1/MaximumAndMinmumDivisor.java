@@ -22,13 +22,22 @@ public class MaximumAndMinmumDivisor {
         }
 
         answer[0] = c;
+        answer[1] = a*b/c;
 
-        if (a % b == 0) {
-            answer[1] = a;
-        } else {
-            answer[1] = a*b/c;
-        }
 
         return answer;
+    }
+
+    public int[] solution2(int n, int m) {
+        int[] answer = new int[2];
+
+        answer[0] = gcd(n,m);
+        answer[1] = (n*m)/answer[0];
+        return answer;
+    }
+
+    public static int gcd(int p, int q) {
+        if (q == 0) return p;
+        return gcd(q, p%q);
     }
 }
