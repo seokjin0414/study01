@@ -23,11 +23,8 @@ public class PersonalInformationLimit {
         }
 
         private int getDay(String date) {
-            String[] vo = date.split("\\.");
-            int y = Integer.parseInt(vo[0]);
-            int m = Integer.parseInt(vo[1]);
-            int d = Integer.parseInt(vo[2]);
-            return (y * 12 * 28) + (m * 28) + d;
+            String[] d = date.split("\\.");
+            return (Integer.parseInt(d[0]) * 12 * 28) + (Integer.parseInt(d[1]) * 28) + Integer.parseInt(d[2]);
         }
 
     }
