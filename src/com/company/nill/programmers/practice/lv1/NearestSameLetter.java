@@ -10,18 +10,16 @@ public class NearestSameLetter {
             List<Integer> answer = new ArrayList<>();
 
             for (int i = 0; i < s.length(); i++) {
+                answer.add(-1);
                 if (i > 0) {
                     for (int j = i - 1; j >= 0; j--) {
-                        if () {
-
+                        if (s.charAt(i) == s.charAt(j)) {
+                            answer.set(i ,i-j);
                             break;
                         }
                     }
-                } else {
-                    answer.add(-1);
                 }
             }
-
 
             return answer;
         }
