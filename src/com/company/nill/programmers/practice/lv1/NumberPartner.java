@@ -1,12 +1,7 @@
-package com.company.nill.programmers.practice;
+package com.company.nill.programmers.practice.lv1;
 
-// 코드 작성용
-public class test {
-    public static void main(String[] args) {
-        test t = new test();
-
-    }
-
+// LV 1 - 숫자 짝꿍
+public class NumberPartner {
     public String solution(String X, String Y) {
         StringBuilder sb = new StringBuilder();
 
@@ -63,6 +58,5 @@ public class test {
             return answer.toString();
         }
     }
-
 
 }
