@@ -1,61 +1,42 @@
 package com.company.nill.programmers.practice;
 
 
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 // 코드 작성용
 public class test {
     public static void main(String[] args) {
         test t = new test();
+        int[][] ba = new int[][]{{0, 0, 0, 0, 0}, {0, 0, 1, 0, 3}, {0, 2, 5, 0, 1}, {4, 2, 4, 4, 2}, {3, 5, 1, 3, 1}};
+        int[] ma = new int[]{1, 5, 3, 5, 1, 2, 1, 4};
 
     }
 
-    public String[] solution(String[] players, String[] callings) {
-        Map<String,Integer> map = new HashMap<>();
+    class Solution {
+        static boolean[] v;
+        static int c = 0;
 
-        for (int i=0; i<players.length; i++) {
-            map.put(players[i], i);
+        public int solution(int k, int[][] dungeons) {
+            v = new boolean[dungeons.length];
+            f(0, k, dungeons);
+            return c;
         }
 
-        for (String s : callings) {
-            int r = map.get(s);
-            String front = players[r-1];
-
-            players[r-1] = s;
-            players[r] = front;
-
-            map.put(s,r-1);
-            map.put(front,r);
+        private void f(int d, int cd, int[][] dungeons) {
+            for (int i = 0; i < dungeons.length; i++) {
+                if (v[i] || dungeons[i][0] > cd) {
+                    continue;
+                }
+                v[i] = true;
+                f(d + 1, cd - dungeons[i][1], dungeons);
+                v[i] = false;
+            }
+            c = Math.max(c, d);
         }
-
-        return players;
     }
 
-    public List<String> solution2(String[] players, String[] callings) {
-        Map<String, Integer> p = new HashMap<>();
-        Map<Integer, String> r = new HashMap<>();
 
-        for (int i=0; i<players.length; i++) {
-            p.put(players[i], i);
-            r.put(i, players[i]);
-        }
 
-        for (String s : callings) {
-            int n = p.get(s);
-            String f = r.get(n - 1);
 
-            p.put(s, n - 1);
-            p.put(f, n);
-            r.put(n - 1, s);
-            r.put(n, f);
-        }
-
-        List<String> answer = new ArrayList<>(r.values());
-
-        return answer;
-    }
 }
