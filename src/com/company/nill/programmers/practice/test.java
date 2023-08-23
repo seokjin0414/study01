@@ -1,8 +1,6 @@
 package com.company.nill.programmers.practice;
 
 
-import java.util.Map;
-import java.util.PriorityQueue;
 
 // 코드 작성용
 public class test {
@@ -36,6 +34,15 @@ public class test {
         }
     }
 
+    public String solution(String[] my_strings, int[][] parts) {
+        StringBuilder answer = new StringBuilder();
+
+        for (int i = 0; i < my_strings.length; i++) {
+            answer.append(my_strings[i].substring(parts[i][0], parts[i][1] + 1));
+        }
+
+        return answer.toString();
+    }
 
 
 
