@@ -1,14 +1,18 @@
 package com.company.nill.programmers.practice;
 
 
+import java.io.*;
+import java.util.Scanner;
 
 // 코드 작성용
 public class test {
-    public static void main(String[] args) {
-        test t = new test();
-        int[][] ba = new int[][]{{0, 0, 0, 0, 0}, {0, 0, 1, 0, 3}, {0, 2, 5, 0, 1}, {4, 2, 4, 4, 2}, {3, 5, 1, 3, 1}};
-        int[] ma = new int[]{1, 5, 3, 5, 1, 2, 1, 4};
-
+    public static void main(String[] args) throws IOException {
+       /* BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        bw.write(br.readLine());
+        bw.flush();
+        br.close();
+        bw.close();*/
     }
 
     class Solution {
@@ -33,17 +37,5 @@ public class test {
             c = Math.max(c, d);
         }
     }
-
-    public String solution(String[] my_strings, int[][] parts) {
-        StringBuilder answer = new StringBuilder();
-
-        for (int i = 0; i < my_strings.length; i++) {
-            answer.append(my_strings[i].substring(parts[i][0], parts[i][1] + 1));
-        }
-
-        return answer.toString();
-    }
-
-
 
 }
