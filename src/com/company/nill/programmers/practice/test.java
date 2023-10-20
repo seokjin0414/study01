@@ -2,7 +2,7 @@ package com.company.nill.programmers.practice;
 
 
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 // 코드 작성용
 public class test {
@@ -37,5 +37,7 @@ public class test {
             c = Math.max(c, d);
         }
     }
+
+
 
 }
