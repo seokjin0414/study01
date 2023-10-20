@@ -37,7 +37,4 @@ public class test {
             c = Math.max(c, d);
         }
     }
-
-
-
 }
